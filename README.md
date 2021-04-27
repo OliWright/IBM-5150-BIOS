@@ -15,3 +15,5 @@ To assemble the BIOS, use the following command
 The modifications to the source code have been carefully chosen so as to minimise the differences in the final binary, compared to the original ROM.  UASM is able to make some `jmp` instructions use a byte-relative mode, whereas the original ROM used a 16-bit offset.  In those cases, I've added a `nop` to re-align the code.  This makes diffing the dissasembly, or the binary less painful.
 
 I also disabled the ROM checksum, because without an additional script to poke a checksum into the binary, the ROM will insta-halt.
+
+All the diffs made to the source code can be seen [here](https://github.com/OliWright/IBM-5150-BIOS/commit/9dd93652289352deb289f4b75d5892f9537e90a8)
