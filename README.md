@@ -16,4 +16,4 @@ The modifications to the source code have been carefully chosen so as to minimis
 
 I also disabled the ROM checksum, because without an additional script to poke a checksum into the binary, the ROM will insta-halt.
 
-All the diffs made to the source code can be seen [here](https://github.com/OliWright/IBM-5150-BIOS/commit/9dd93652289352deb289f4b75d5892f9537e90a8)
+All the diffs made to the source code can be seen [here](https://github.com/OliWright/IBM-5150-BIOS/compare/f8df3606aceb9b5ae06ebc1d41cc239c37660d66...8d4ce3b12d1abaff2f05fe65decc7a06718ab4a0)
