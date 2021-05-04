@@ -1,8 +1,8 @@
 # IBM 5150 BIOS
 
-Reconstructed source for lots of early PC BIOSes can be found [here](https://sites.google.com/site/pcdosretro/ibmpcbios).
+When working with an old computer like the original IBM PC, sometimes the original BIOS can be unhelpful in diagnosing problems.  At times it is very helpful if you're able to modify the code in some way.  This project builds on a project that [reconstructed the original source code](https://sites.google.com/site/pcdosretro/ibmpcbios) by allowing that code to be assembled with a modern assembler ([uasm](http://www.terraspace.co.uk/uasm.html)).
 
-In order to assemble one of these BIOSes, you'll require an old assembler (MASM 4.0 or earlier) and you'll need to make some modifications to the source code.  That can be problematic for those of us at nerd level 23 or below.  This project is a modified 5150 V2 BIOS (U33 5700671 19th October 1981) that can be assembled using [uasm](http://www.terraspace.co.uk/uasm.html), which is a free modern assembler.  You can use this as a starting point for further modifications.
+The BIOS in this project currently is a modified 5150 V2 BIOS (U33 5700671 19th October 1981).  The modifications here should hopefully allow similar modifications to be made to other versions if required.
 
 To assemble the BIOS, use the following command
 
@@ -16,4 +16,4 @@ The modifications to the source code have been carefully chosen so as to minimis
 
 I also disabled the ROM checksum, because without an additional script to poke a checksum into the binary, the ROM will insta-halt.
 
-All the diffs made to the source code can be seen [here](https://github.com/OliWright/IBM-5150-BIOS/compare/f8df3606aceb9b5ae06ebc1d41cc239c37660d66...8d4ce3b12d1abaff2f05fe65decc7a06718ab4a0)
+All the diffs made to the source code can be seen [here](https://github.com/OliWright/IBM-5150-BIOS/compare/f8df3606aceb9b5ae06ebc1d41cc239c37660d66...44b7705f4625770eb21594673b094d5d4f948ec5)
